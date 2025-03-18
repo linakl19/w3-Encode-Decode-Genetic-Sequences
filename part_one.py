@@ -73,7 +73,9 @@ def encode_strand(strand):
             new_entry = strand[index - 1] + str(count)
             encoding.append(new_entry)
             count = 1
-
+    
+    #Append the last character or sequence of strand to encoding 
+    encoding.append(strand[-1]+str(count))
     return "".join(encoding)
 
 def decode_strand(encoding):
