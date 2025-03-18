@@ -56,7 +56,7 @@ def part_two_tests():
     assert result == 1
 
     result = categorize_encoded_strand(ENCODED_BOTH_BASES)
-    assert result == -1
+    assert result == -1, f"{result=}" 
 
     result = categorize_encoded_strand(ENCODED_NEITHER_BASE)
     assert result == -1
